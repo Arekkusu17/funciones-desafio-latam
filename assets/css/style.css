@@ -1,0 +1,26 @@
+.square-div {
+  width: 200px;
+  height: 200px;
+}
+
+#firstSquare {
+  background-color: rgb(118, 138, 237);
+}
+
+#secondSquare {
+  background-color: rgb(146, 246, 246);
+}
+
+#thirdSquare {
+  background-color: darkseagreen;
+}
+
+#fourthSquare {
+  background-color: lightcoral;
+}
+
+#divContainer {
+  padding: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
