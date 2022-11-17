@@ -4,17 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Document</title>
   </head>
   <body>
-    <div id="ele1">hello</div>
+    <!-- <h1></h1> -->
+    <h2 id="ele1">If you click me, I'll turn YELLOW</h2>
     <section id="divContainer">
-      <div id="firstSquare" class="square-div"></div>
-      <div id="secondSquare" class="square-div"></div>
-      <div id="thirdSquare" class="square-div"></div>
-      <div id="fourthSquare" class="square-div"></div>
+      <div id="firstSquare" class="square-div">You can change my color</div>
+      <div id="secondSquare" class="square-div">You can change my color</div>
+      <div id="thirdSquare" class="square-div">You can change my color</div>
+      <div id="fourthSquare" class="square-div">You can change my color</div>
     </section>
+    <p>First select a color by pressing down the key "a", "s" or "d", then click on any square</p>
+    <p>
+      Pressing <b>"a"</b> will select the color
+      <span class="text-color-white bg-tango">"Tango"</span>, <b>"s"</b> will select the color
+      <span class="text-color-white bg-jelly-bean">"Jelly Bean"</span> and <b>"d"</b> will select
+      the color <span class="text-color-white bg-malachite">"Malachite"</span>.
+    </p>
+    <p>
+      <b>Color Selected: <span id="chosenColor">None</span></b>
+    </p>
+
     <script src="/assets/js/app.js"></script>
   </body>
 </html>

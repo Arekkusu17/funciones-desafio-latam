@@ -1,6 +1,28 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #b5cec8;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 20px;
+}
+
 .square-div {
   width: 200px;
   height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: solid 2px;
+}
+
+h2 {
+  display: block;
+  align-self: center;
+  width: 500px;
+  text-align: center;
 }
 
 #firstSquare {
@@ -12,15 +34,37 @@
 }
 
 #thirdSquare {
-  background-color: darkseagreen;
+  background-color: #64ce64;
 }
 
 #fourthSquare {
-  background-color: lightcoral;
+  background-color: #f94144;
 }
 
 #divContainer {
-  padding: 4rem;
+  gap: 3rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+p {
+  text-align: center;
+}
+
+.text-color-white {
+  color: white;
+  font-weight: 500;
+}
+
+.bg-malachite {
+  background-color: #4d908e;
+}
+
+.bg-tango {
+  background-color: #f3722c;
+}
+
+.bg-jelly-bean {
+  background-color: #277da1;
 }

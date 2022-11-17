@@ -18,28 +18,32 @@ const suma = (a, b) => a + b;
 
 //3.1
 const element = document.getElementById("ele1");
-element.setAttribute("style", "background-color:green");
+element.setAttribute("style", "background-color:#48EE48");
 const pintar = function (ele, color) {
   ele.setAttribute("style", "background-color:" + color);
 };
-element.addEventListener("click", () => pintar(element, "yellow"));
+element.addEventListener("click", () => pintar(element, "#F9C74F"));
 
 // 4
+const chosenColor = document.getElementById("chosenColor");
 
-let changeToColor = "";
+let changeToColor = {};
 document.addEventListener("keydown", function (event) {
   switch (event.key.toLowerCase()) {
     case "a":
-      changeToColor = "red";
+      changeToColor.hex = "#F3722C";
+      changeToColor.name = "Tango";
       break;
     case "s":
-      changeToColor = "blue";
+      changeToColor.hex = "#277DA1";
+      changeToColor.name = "Jellybean";
       break;
     case "d":
-      changeToColor = "black";
+      changeToColor.hex = "#4D908E";
+      changeToColor.name = "Malachite";
       break;
   }
-  console.log(changeToColor);
+  chosenColor.textContent = changeToColor.name;
   return changeToColor;
 });
 
@@ -71,6 +75,6 @@ const divSection = document.getElementById("divContainer");
 divSection.addEventListener("click", (e) => {
   if (e.target.tagName === "DIV") {
     const divAffected = e.target;
-    divAffected.setAttribute("style", "background-color: " + changeToColor);
+    divAffected.setAttribute("style", "background-color: " + changeToColor.hex);
   }
 });
