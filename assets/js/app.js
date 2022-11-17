@@ -1,7 +1,7 @@
 //First Script
 //change this function to a function expression.
-//function example(a, b, c){
-//  return a+b+c
+//  function example(a, b, c){
+//    return a+b+c
 //  }
 
 const example = function (a, b, c) {
@@ -10,13 +10,21 @@ const example = function (a, b, c) {
 
 //Second Script
 //change this function to an arrow function
-//suma=function(a,b){
-//  return a+b
-//}
+//  suma=function(a,b){
+//    return a+b
+//  }
 
 const suma = (a, b) => a + b;
 
 //3.1
+// function pintar(element) {
+//   element.style.backgroundColor = "yellow";
+// }
+// const ele = document.getElementById("ele1");
+// ele.addEventListener("click", () => pintar(ele));
+
+//3.2
+
 const element = document.getElementById("ele1");
 element.setAttribute("style", "background-color:#48EE48");
 const pintar = function (ele, color) {
@@ -46,29 +54,6 @@ document.addEventListener("keydown", function (event) {
   chosenColor.textContent = changeToColor.name;
   return changeToColor;
 });
-
-//FIRST VERSION
-// const firstSquare = document.getElementById("firstSquare");
-// const secondSquare = document.getElementById("secondSquare");
-// const thirdSquare = document.getElementById("thirdSquare");
-// const fourthSquare = document.getElementById("fourthSquare");
-
-// firstSquare.addEventListener("click", () => {
-//   firstSquare.setAttribute("style", "background-color: " + changeToColor);
-// });
-// secondSquare.addEventListener("click", () => {
-//   secondSquare.setAttribute("style", "background-color: " + changeToColor);
-// });
-// thirdSquare.addEventListener("click", () => {
-//   thirdSquare.setAttribute("style", "background-color: " + changeToColor);
-// });
-// fourthSquare.addEventListener("click", () => {
-//   fourthSquare.setAttribute("style", "background-color: " + changeToColor);
-// });
-
-// document.onclick = (e) => {
-//   console.log(e.target.id);
-// };
 
 const divSection = document.getElementById("divContainer");
 
